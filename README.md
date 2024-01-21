@@ -53,15 +53,11 @@ We will be using a number of library dependencies. Let us look at the major ones
 <br>
 nltk: It is an NLP core library. It is developed for natural language processing in a variety of languages and contains tools for diverse tasks in the field. We will use it to process the data and set parameters.<br><br>
 
-beautifulsoup4: This is the most powerful web scraping library. We will use libraries here to read the article from Wikipedia as we want.
-<br><br>
-
-lxml: a standard for reading webpages such as HTML or XML. It ensures the loaded page is easily handled and extracted.
-
-<br><br>
-
+1. beautifulsoup4: This is the most powerful web scraping library. We will use libraries here to read the article from Wikipedia as we want.
 <br>
+2. lxml: a standard for reading webpages such as HTML or XML. It ensures the loaded page is easily handled and extracted.
 
+<br><br>
 * Fetching Articles from Wikipedia<br><br>
 
 Before we start to load the data into the project, it is essential to understand a few points. Document summarization can be done in different depending on the overall objective. Let us see them and clearly understand the one we are doing.
