@@ -51,17 +51,15 @@ Like regular Python projects, we start first by bringing in the required librari
 <br><br>
 We will be using a number of library dependencies. Let us look at the major ones:
 <br>
-nltk: It is an NLP core library. It is developed for natural language processing in a variety of languages and contains tools for diverse tasks in the field. We will use it to process the data and set parameters.<br><br>
-
-1. beautifulsoup4: This is the most powerful web scraping library. We will use libraries here to read the article from Wikipedia as we want.
-<br>
-2. lxml: a standard for reading webpages such as HTML or XML. It ensures the loaded page is easily handled and extracted.
+1. nltk: It is an NLP core library. It is developed for natural language processing in a variety of languages and contains tools for diverse tasks in the field. We will use it to process the data and set parameters.<br>
+2. beautifulsoup4: This is the most powerful web scraping library. We will use libraries here to read the article from Wikipedia as we want.<br>
+3. lxml: a standard for reading webpages such as HTML or XML. It ensures the loaded page is easily handled and extracted.
 
 <br><br>
-* Fetching Articles from Wikipedia<br><br>
+* Fetching Articles from Wikipedia<br>
 
 Before we start to load the data into the project, it is essential to understand a few points. Document summarization can be done in different depending on the overall objective. Let us see them and clearly understand the one we are doing.
-<br><br>
+<br>
 
 Firstly, we have single-document summarization and multi-document summarization:
 
@@ -111,22 +109,18 @@ Finally, the most exciting point. We have computed the scores for each sentence 
 ## NOTES:
 Normally, in Jupyter Notebooks, you may prefer to give a fixed URL, change the URL when you need it and not ask for user input. But I wanted to see from which articles I can get a better summary and when the NLTK does "so so": That's why, I ask for user input and give different Wikipedia articles in English language. Also, this way, code is more flexible.
 <br>
-userLink = input("Which Wikipedia article would you want me to summarize: ") #with user input version, a bit more flexible
+user link = input("Which Wikipedia article would you want me to summarize: ") #with user input version, a bit more flexible
 <br>
-#If you prefer a fixed URL in the code or if you encounter an error in Jupyter, then you can also change the code with a pre-given URL and change accordingly later in Jupyter Notebook.
+#If you prefer a fixed URL in the code or if you encounter an error in Jupyter, then you can also change the code with a pre-given URL and change it accordingly later in Jupyter Notebook.
 <br>
-Example:
-raw_data = urllib.request.urlopen('https://en.wikipedia.org/wiki/F-Secure') (with a pre-given Wikipedia URL)
-document = raw_data.read()
-<br>
-Since I like F-Secure and wishing to attend their trainings, I search for them and wrote this this simple Wikipedia Article summarizer to practise NLP and Python, meanwhile learning more about F-Secure, its history, culture, etc.
+Since I like F-Secure and wish to attend their training, I search for them and wrote this simple Wikipedia Article summarizer to practise NLP and Python, meanwhile learning more about F-Secure, its history, culture, etc.
 <br>
 <br>
 
 
 Full capabilities of wikiscrape package include:<br>
 Able to search in multiple languages<br>
-Give suggestions on search terms if search is ambiguous<br>
+Give suggestions on search terms if the search is ambiguous<br>
 Gives a short summary (2 paragraphs) of the article if it is retrieved successfully<br>
 Retrieve full text or exact number of paragraphs in string output for data pipeline<br>
 var.HELP() for the full list of functions available<br>
