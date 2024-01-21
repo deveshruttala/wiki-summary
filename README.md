@@ -28,7 +28,6 @@ These are words called “STOP WORDS”. In processing we respect that they have
 <br><br>
 Application Areas<br>
 Document summarization has been employed in a variety of tasks including:<br>
-<br>
 Chatbots: chatbots require their interactions to be as precise as possible. But most users fail to meet this requirement and end up not using the bot to its best performance. Summarizing bulky input texts can help the bot focus better and fix this problem.
 <br>
 Patent research: You may need to search and read the full text of patents from different sources to find prior work or literature. Manually going through thousands of documents could become very tedious and slow. Document Summarization could help you summarize and extract the most salient claims across patents.
@@ -40,16 +39,14 @@ Online Marketing: Most online platform users like social media, and blogs, prefe
 
 <br><br>
 Project Pipeline:<br>
-Import Dependencies<br>
-Fetch Articles from Wikipedia<br>
-Preprocess the Data<br>
-Text Tokenization/Text to Sentence<br>
-Weight the Frequency of Words<br>
-Score Sentences<br>
-Extract the Summary<br>
-Importing Dependencies<br><br>
-
-
+1. Import Dependencies<br>
+2. Fetch Articles from Wikipedia<br>
+3. Preprocess the Data<br>
+4. Text Tokenization/Text to Sentence<br>
+5. Weight the Frequency of Words<br>
+6. Score Sentences<br>
+7. Extract the Summary<br>
+<br>
 Like regular Python projects, we start first by bringing in the required libraries. Python does not automatically import libraries else our script will have over 137,000 packages when we need far less than that. This could reach a whopping 4.2 GB! Our Python script gains access to the code in another module by the procedure of importing it.
 <br><br>
 We will be using a number of library dependencies. Let us look at the major ones:
@@ -149,16 +146,11 @@ Analytics functions available in wikiscrape object are commonwords, commonwordsp
 
 
 
-* to implement git clone the repo and follow the notebook instructions.
+* to implement git clone the repo and follow the notebook instructions. <br>
 ``` git clone  https://github.com/deveshruttala/wiki-summary.git```
 
 
-
-
-
 ### Conclusion and credits
-In this project, we have tried to explain the task of text summarization using Python NLTK and other helper libraries. We summarized the Wikipedia article into 10 sentences. Document summarization can be used in diverse scenarios. You can adjust the project to various use cases. Two things to adjust are simply the input point of the data and the output point where you specify the number of sentences. 
-
-<br>
-and i reachout to my thanks for medium blog "wiki summarization in 10 sentences" and 
+In this project, we have tried to explain the task of text summarization using Python NLTK and other helper libraries. We summarized the Wikipedia article into 10 sentences. Document summarization can be used in diverse scenarios. You can adjust the project to various use cases. Two things to adjust are simply the input point of the data and the output point where you specify the number of sentences.<br>
+and i reachout to my thanks for medium blog "wiki summarization in 10 sentences" for inspiring me  and 
 <a href="https://medium.com/@abhinaya08/data-scientists-guide-to-summarization-dde46b30b4c3"> to know in detail about the aritcle summarization techniques follow this blog </a>
